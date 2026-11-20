@@ -16,7 +16,7 @@ services:
       start_period: 10s
 
   parsedmarc:
-    image: patschi/parsedmarc:latest
+    image: ghcr.io/nachotek/parsedmarc:latest
     volumes:
       - parsedmarc_conf:/etc/parsedmarc/
       - geoip_data:/usr/share/GeoIP:ro
