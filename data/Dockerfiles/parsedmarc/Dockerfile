@@ -4,8 +4,18 @@ ADD start.sh /start.sh
 
 RUN apt-get update \
     && apt-get install -y \
-        python3-pip python3-dev libxml2-dev libxslt-dev libz-dev \
-        gcc libemail-outlook-message-perl python3-gi python3-gi-cairo \
+        python3-pip \
+        python3-dev \
+        libxml2-dev \
+        libxslt-dev \
+        libz-dev \
+        libssl-dev \
+        libffi-dev \
+        pkg-config \
+        gcc \
+        libemail-outlook-message-perl \
+        python3-gi \
+        python3-gi-cairo \
         gir1.2-secret-1
 
 RUN pip install --no-cache-dir -U "parsedmarc[elastic]"
