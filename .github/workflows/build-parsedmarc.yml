@@ -28,6 +28,6 @@ jobs:
         with:
           context: data/Dockerfiles/parsedmarc/
           tags: |
-            ghcr.io/nachotek/parsedmarc:latest
-            ghcr.io/nachotek/parsedmarc:${{ github.sha }}
+            ghcr.io/MichaelKuch/parsedmarc:latest
+            ghcr.io/MichaelKuch/parsedmarc:${{ github.sha }}
           push: true
