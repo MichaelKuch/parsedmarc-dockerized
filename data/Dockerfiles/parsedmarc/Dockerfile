@@ -18,7 +18,7 @@ RUN apt-get update \
         python3-gi-cairo \
         gir1.2-secret-1
 
-RUN pip install --no-cache-dir -U "parsedmarc[elastic]"
+RUN pip install --no-cache-dir -U "parsedmarc[elastic,msgraph]"
 
 RUN apt-get purge --yes gcc \
     && apt autoremove --yes \
