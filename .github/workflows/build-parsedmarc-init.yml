@@ -26,6 +26,6 @@ jobs:
         with:
           context: data/Dockerfiles/parsedmarc-init/
           tags: |
-            ghcr.io/MichaelKuch/parsedmarc-init:latest
-            ghcr.io/MichaelKuch/parsedmarc-init:${{ github.sha }}
+            ghcr.io/michaelkuch/parsedmarc-init:latest
+            ghcr.io/michaelkuch/parsedmarc-init:${{ github.sha }}
           push: true

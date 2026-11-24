@@ -1,6 +1,6 @@
 services:
   parsedmarc-init:
-    image: ghcr.io/MichaelKuch/parsedmarc-init:latest
+    image: ghcr.io/michaelkuch/parsedmarc-init:latest
     restart: always
     volumes:
       - parsedmarc_conf:/etc/parsedmarc/:rw
@@ -16,7 +16,7 @@ services:
       start_period: 10s
 
   parsedmarc:
-    image: ghcr.io/MichaelKuch/parsedmarc:latest
+    image: ghcr.io/michaelkuch/parsedmarc:latest
     volumes:
       - parsedmarc_conf:/etc/parsedmarc/
       - geoip_data:/usr/share/GeoIP:ro
